@@ -19,7 +19,7 @@ function Footer() {
           </h4>
           <p>
             <a href="mailto:unitech.negocio@gmail.com">
-              unitech.negocio@gmail.com
+              derthra.solutions@gmail.com
             </a>
           </p>
         </div>

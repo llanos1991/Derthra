@@ -13,7 +13,7 @@ function Nosotros() {
       <section className="nosotros-section">
         <h1>¿Cómo inicia DERTHRA?</h1>
         <p>
-          <strong>DERTHRA</strong> nace como la evolución de UNIdev, un startup peruana creada en 2018 
+          DERTHRA nace como la evolución de un startup peruana creada en 2018 
           por un grupo de estudiantes universitarios con habilidades en el desarrollo de sistemas y aplicaciones, 
           enfocados en tecnologías disruptivas como:
         </p>
@@ -36,11 +36,11 @@ function Nosotros() {
       <section className="nosotros-section objetivos">
         <h2>Objetivos</h2>
         <ul>
+          <li>Implementar proyectos de I + D en instituciones y empresas.</li>
+          <li>Ofrecer soluciones integrales de IA para IoT y sensores.</li>
+          <li>Desarrollar sistemas de voz, imagenes y video a través de la IA.</li>
           <li>Brindar asesoría especializada en tesis tecnológicas y de ingeniería.</li>
-          <li>Ofrecer soluciones integrales en infraestructura tecnológica y redes.</li>
-          <li>Desarrollar sistemas personalizados a través de <strong>UNIdev</strong>.</li>
-          <li>Implementar sistemas de videovigilancia y seguridad para instituciones y empresas.</li>
-          <li>Capacitar y acompañar a estudiantes y profesionales en proyectos tecnológicos reales.</li>
+          <li>Capacitacion a estudiantes y profesionales en proyectos tecnológicos reales.</li>
           <li>Establecer alianzas con instituciones educativas y organismos públicos.</li>
         </ul>
       </section>
@@ -49,8 +49,7 @@ function Nosotros() {
       <section className="nosotros-section mision">
         <h2>Misión</h2>
         <p>
-          Proveer servicios tecnológicos de alta calidad en asesoría, desarrollo, infraestructura y seguridad, 
-          fomentando el crecimiento académico y profesional de nuestros clientes mediante un enfoque práctico, 
+          Proveer servicios tecnológicos de alta calidad en base a la IA  para nuestros clientes mediante un enfoque práctico, 
           personalizado y con impacto social.
         </p>
       </section>

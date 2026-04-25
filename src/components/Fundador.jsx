@@ -14,7 +14,8 @@ function Fundador() {
           <div className="contenido-texto-card">
             <h4>Msc. Ing. Christopher Josue Llanos Vasquez</h4>
             <p>
-              Desarrollador de software para sistemas criticos en el area de transporte y militar, Analista desarrollador en lenguajes como Java,python,C++,ADA. 
+              Implementador de sistemas criticos en el area aeronautica, transporte y militar, en los lenguajes de programación como Java,python,C++,ADA.
+              Arquitecto de Software para sistemas Core banking, Core de Salud.
             </p>
           </div>
         </div>

@@ -23,8 +23,7 @@ function Navbar() {
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <Link to="/">Inicio</Link>
         <Link to="/asesoria">Asesoria</Link>
-        <Link to="/unidev">Unidev</Link>
-        <Link to="/practica">Práctica profesional</Link>
+        <Link to="/unidev">Derthra Code</Link>
         <Link to="/nosotros">Nosotros</Link>
       </div>
     </nav>

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Overview from './view/Overview'; // <<-- Aquí importa tu vista Overview
 import Asesoria from './view/Asesoria';
 import Unidev from './view/Unidev';
-import Practica from './view/Practica';
+//import Practica from './view/Practica';
 import Nosotros from './view/Nosotros';
 
 
@@ -15,7 +15,6 @@ function App() {
         <Route path="/" element={<Overview />} />
         <Route path="/asesoria" element={<Asesoria />} />
         <Route path="/unidev" element={<Unidev />} />
-        <Route path="/practica" element={<Practica />} />
         <Route path="/nosotros" element={<Nosotros />} />
         {/* Luego podrías agregar más páginas aquí */}
       </Routes>
