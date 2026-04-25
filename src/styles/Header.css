@@ -1,0 +1,112 @@
+/* ====== HEADER SIN ESPACIOS BAJO NAVBAR ====== */
+header#Inicio {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+/* ====== SLIDER ====== */
+.header-slider {
+  width: 100%;
+  height: 83vh; /* ocupa toda la pantalla */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Cada slide */
+.slide-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Oscurece un poco para mejor contraste del texto */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Texto principal */
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f4c542;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.overlay h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ====== PUNTOS (PAGINACIÓN) ====== */
+.swiper-pagination-bullet {
+  background-color: #f4c542 !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .overlay h2 {
+    font-size: 1.1rem;
+  }
+
+  .header-slider {
+    height: 80vh;
+  }
+}
+
+/* ====== FIX SOLO PARA LA PÁGINA DE INICIO ====== */
+
+/* Elimina el espacio blanco entre navbar y slider */
+.App header#Inicio {
+  margin-top: -80px !important; /* compensa el padding-top global del body */
+  padding-top: 0 !important;
+  background: transparent !important;
+}
+
+/* Evita que el slider cree sombra o fondo blanco */
+.App .header-slider {
+  margin-top: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Ajuste adicional para Swiper */
+.swiper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border: none !important;
+}
+
+/* Opcional: asegura que no haya sombra o color bajo el navbar */
+.navbar {
+  box-shadow: none !important;
+}

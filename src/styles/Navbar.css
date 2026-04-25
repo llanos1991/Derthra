@@ -1,0 +1,208 @@
+/* ======= NAVBAR ======= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border: none;
+  outline: none;
+}
+
+
+/* ======= EFECTO AL HACER SCROLL ======= */
+.navbar.scrolled {
+  background-color: #111;        /* 🔹 Se oscurece un poco al bajar */
+  padding: 10px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ======= LOGO ======= */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* ======= LINKS ======= */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f4c542;                /* Amarillo corporativo */
+}
+
+/* ======= HAMBURGER (MÓVIL) ======= */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    width: 100%;
+  }
+}
+
+
+/* Aplica padding solo al contenido principal, no al body entero */
+main, section:first-of-type, header:first-of-type {
+  padding-top: 80px; /* ajusta según la altura real de tu navbar */
+}
+
+/* ======= CORRECCIÓN GLOBAL DEL BORDE BLANCO ======= */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebe9; /* evita reflejos blancos al borde */
+  border: none;
+}
+
+header, section:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: none !important;
+}
+
+#Inicio, .slider-container, .swiper, .swiper-wrapper {
+  margin-top: 0 !important;
+  border-top: none !important;
+  padding-top: 0 !important;
+  background: transparent !important;
+}
+
+/* ====== ESPACIADO CORRECTO PARA NAVBAR FIJO ====== */
+
+/* Elimina márgenes y fondos indeseados */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebe9; /* color base del sitio */
+  border: none;
+}
+
+/* Asegura que el navbar no deje espacio ni genere borde */
+.navbar {
+  border-bottom: none;
+}
+
+/* Corrige el espacio blanco entre el navbar y el contenido */
+header, main, section {
+  margin-top: 0 !important;
+  border-top: none !important;
+}
+
+/* Da espacio exacto al contenido para no quedar debajo del navbar */
+main, section:first-of-type, .nosotros, .asesoria-ingenieria, .asesoria-tesis, .requisitos {
+  padding-top: 75px; /* Altura real del navbar (ajustable a 70-80px según se vea) */
+}
+
+/* Evita doble padding en headers que contengan sliders o imágenes */
+header:first-of-type {
+  padding-top: 0 !important;
+  margin-top: 75px; /* solo se empuja el header visualmente */
+}
+
+/* Ajuste para Swiper u otros contenedores del Header */
+#Inicio, .slider-container, .swiper, .swiper-wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: none !important;
+  background: transparent !important;
+}
+
+/* ====== CORRECCIÓN FINAL PARA NAVBAR FIJO ====== */
+
+/* Navbar fijo sin espacios */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
+/* Elimina cualquier fondo blanco residual del body o header */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #e9ebe9;
+}
+
+/* Empuja TODO el contenido 1 sola vez */
+body {
+  padding-top: 80px; /* altura exacta del navbar */
+}
+
+/* Evita que headers o sliders generen huecos */
+header, main, section, #Inicio, .slider-container, .swiper, .swiper-wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Elimina la línea blanca justo debajo del navbar */
+header:first-of-type, #Inicio {
+  border-top: none !important;
+  box-shadow: none !important;
+}
+
+/* Ajuste de fondo de slider o primera sección */
+header, .slider-container {
+  background-color: transparent !important;
+}
+

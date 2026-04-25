@@ -1,0 +1,88 @@
+/* Contenedor general */
+.about-services {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Título de la sección */
+  .titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Contenedor para los servicios */
+  .servicio-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Cada servicio individual */
+  .servicio-ind {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto; 
+  }
+  
+  .servicio-ind img {
+    width: 100px;
+    height: 90px;
+    margin-bottom: 15px;
+  }
+  
+  /* Título dentro de cada servicio */
+  .servicio-ind h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.3;
+    flex-shrink: 0; /* Evita que el título se achique */
+  }
+  
+  /* Descripción del servicio */
+  .servicio-ind p {
+    font-size: 0.8rem;
+    color: #5c4646;
+    line-height: 1.6;
+    flex-grow: 1; /* Rellena el espacio disponible */
+    margin-bottom: 10px; /* Agrega espacio debajo del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  /* Efecto hover */
+  .servicio-ind:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    .servicio-cont {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .servicio-ind {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .titulo {
+      font-size: 2rem;
+    }
+  }
+  

@@ -1,0 +1,188 @@
+/* ======= ESTILOS GENERALES ======= */
+.asesoria-ingenieria,
+.asesoria-tesis {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* ======= TÍTULOS PRINCIPALES ======= */
+.asesoria-ingenieria h2,
+.asesoria-tesis h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+.asesoria-ingenieria h2::after,
+.asesoria-tesis h2::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background-color: #f4c542;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ======= PÁRRAFOS ======= */
+.asesoria-ingenieria p,
+.asesoria-tesis p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 25px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ======= CONTENEDOR FLEX ======= */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* ======= BLOQUE DE TEXTO ======= */
+.left-div {
+  flex: 1 1 520px;
+  margin-top: 0;
+}
+
+.left-div ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.left-div li {
+  position: relative;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 12px;
+  padding-left: 28px;
+  transition: transform 0.2s ease;
+}
+
+.left-div li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #f4c542;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.left-div li:hover {
+  transform: translateX(5px);
+  color: #111;
+}
+
+/* ======= IMÁGENES RESPONSIVAS ======= */
+.asesoria-img-container {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.img-estilo {
+  width: 100%;
+  max-width: 340px; /* 🔹 tamaño ideal y equilibrado */
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 0;
+}
+
+.img-estilo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ======= SUBTÍTULOS (H3) ======= */
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f4c542;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: left;
+  border-left: 4px solid #f4c542;
+  padding-left: 12px;
+}
+
+/* ======= AJUSTE DE SECCIÓN ======= */
+.asesoria-tesis {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 1024px) {
+  .img-estilo {
+    max-width: 300px; /* 🔹 reduce suavemente */
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;    /* 🔹 centra texto e imagen */
+    text-align: center;
+    gap: 10px;              /* 🔹 reduce espacio entre ambos */
+  }
+
+  .left-div {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .left-div li {
+    text-align: left;       /* 🔹 mantiene la lista alineada */
+  }
+
+  .asesoria-ingenieria h2,
+  .asesoria-tesis h2 {
+    font-size: 1.8rem;
+  }
+
+  .asesoria-img-container {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center; /* 🔹 centra horizontalmente */
+    margin-top: 0;           /* 🔹 elimina espacio extra */
+  }
+
+  .img-estilo {
+    max-width: 260px;  /* 🔹 tamaño equilibrado para tablets */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-estilo {
+    max-width: 220px; /* 🔹 tamaño para móviles */
+  }
+
+  .container {
+    gap: 8px; /* 🔹 menos separación aún en pantallas pequeñas */
+  }
+}
+
+
+  

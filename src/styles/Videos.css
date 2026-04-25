@@ -1,0 +1,153 @@
+/* ======= SECCIÓN DE CURSOS UNIDEV ======= */
+.videos-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* ======= TÍTULO PRINCIPAL ======= */
+.videos-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.videos-section h2::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background-color: #f4c542;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ======= DESCRIPCIÓN ======= */
+.videos-section p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 25px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ======= CONTENEDOR PRINCIPAL ======= */
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* ======= TEXTO ======= */
+.videos-text {
+  flex: 1 1 520px;
+}
+
+.videos-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.videos-text li {
+  position: relative;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 12px;
+  padding-left: 28px;
+  transition: transform 0.2s ease;
+}
+
+.videos-text li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #f4c542;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.videos-text li:hover {
+  transform: translateX(5px);
+  color: #111;
+}
+
+/* ======= VIDEO ======= */
+.videos-frame {
+  flex: 1 1 380px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.videos-frame iframe {
+  width: 100%;
+  max-width: 420px;
+  height: 250px;
+  border-radius: 12px;
+  border: 3px solid #f4c542;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.videos-frame iframe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* ======= SEPARADOR ENTRE CURSOS ======= */
+.videos-section:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 900px) {
+  .videos-container {
+    flex-direction: column;
+    align-items: center;   /* centra ambos elementos */
+    gap: 10px;             /* reduce el espacio entre texto y video */
+  }
+
+  .videos-text {
+    flex: 1 1 100%;
+    text-align: center;    /* centra el texto si quieres */
+  }
+
+  .videos-text li {
+    text-align: left;      /* mantiene las viñetas alineadas */
+  }
+
+  .videos-frame {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center; /* centra horizontalmente el video */
+    margin-top: 0;           /* elimina margen innecesario */
+  }
+
+  .videos-frame iframe {
+    max-width: 340px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .videos-frame iframe {
+    max-width: 280px;
+    height: 160px;
+  }
+}
+
+
