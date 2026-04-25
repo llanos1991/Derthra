@@ -1,50 +1,38 @@
-# UNItech solutions S.A.C
+# Derthra solutions S.A.C
 
-- Pagina web de servicios especializados de sistemas y computo (UNItech solutions s.a.c),
+<p align="center">
+  <img src="image.png" width="180"/>
+</p>
 
-## Infraestructura de Red y Conectividad
+- 🌐 Pagina web de servicios especializados de sistemas y computo (Derthra solutions s.a.c),
 
-1. Instalación y configuración de routers y switches.
-2. Implementación de redes LAN y WiFi seguras.
-3. Cableado estructurado (UTP categoría 5e/6) y fibra óptica.
-4. Configuración de redes con segmentación y control de acceso.
 
-## Sistemas de Videovigilancia
+## Derthra IA ⚙️ 
 
-1. Instalación de cámaras de seguridad IP y grabadores (DVR/NVR).
-2. Configuración de monitoreo local y remoto.
-3. Integración con dispositivos móviles (vigilancia por app).
-4. Asesoría en colocación estratégica para máxima cobertura.
+- Desarrollo de proyectos en I+D en base a IA
+- Desarrollo IA para imagenes, video.
+- Desarrollo de IA para voz.
+- Desarrollo IA para area Industrial, Salud, Militar.
+- Desarrollo de proyectos MVP area de sistemas.
+- Desarrollo de proyectos IoT, sensores.
 
-## Instalación de Equipos Informáticos
+## Derthra Code ⚙️ 
 
-1. Instalación y configuración de PCs, laptops, impresoras y escáneres.
-2. Instalación de sistemas operativos y programas institucionales.
-3. Configuración de impresoras en red o compartidas.
-
-## Asesoría Tecnológica Personalizada
-
-1. Evaluación de necesidades tecnológicas según el tipo de institución.
-2. Recomendaciones de equipos y arquitectura de red.
-3. Propuesta de mejora para optimizar el uso de la tecnología disponible.
-
-## UNIdev
-
-- Enseñanza en programacion en C++, ADA
+- Enseñanza en programacion en C++, Python, Java, ADA
 - Asesoria de tesis o tesina en la carrera de sistemas
 
 ## ROLES
 
 1. Ingeniero de sistemas colegiado.
-2. Tecnico en redes y cableado.
+2. Tecnico en sistemas.
 3. Tecnico en soporte informatico.
-4. Tecnico electronico.
+4. Tecnico electronico, mecatronico.
 
 ## COMANDOS PARA PROYECTO FRONTEND CON REACT
 
 ## UNIDEV Frontend
 
-Este es el frontend del proyecto **UNIDEV**, creado con React y preparado para pruebas y despliegue en contenedores Docker.
+Este es el frontend del proyecto, creado con React y preparado para pruebas y despliegue en contenedores Docker.
 
 ---
 
