@@ -1,7 +1,7 @@
 # Derthra solutions S.A.C
 
 <p align="center">
-  <img src="image.png" width="180"/>
+  <img src="image.png" width="200"/>
 </p>
 
 - 🌐 Pagina web de servicios especializados de sistemas y computo (Derthra solutions s.a.c),
