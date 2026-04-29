@@ -1,76 +1,89 @@
-/* Contenedor general */
+/* ===== CONTENEDOR ===== */
 .contenedor {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 0;
-}
-
-/* Título */
-.titulo {
+    padding: 40px 20px;
+  }
+  
+  /* ===== TÍTULO ===== */
+  .titulo {
     text-align: center;
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 40px;
-}
-
-/* Sección de cards */
-.cards {
+  }
+  
+  /* ===== CONTENEDOR DE CARDS ===== */
+  .cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-}
-
-/* Cada card individual */
-.card {
-    background: #f9f9f9;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 320px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* Imagen de cada fundador */
-.card img {
-    width: 50%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    margin: auto;
+  }
+  
+  /* ===== CARD PLANO ===== */
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 700px;
+    padding: 25px 20px;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
     border-bottom: 1px solid #ddd;
-}
-
-/* Contenido dentro de la card */
-.contenido-texto-card {
-    padding: 8px;
-    text-align: center;
-}
-
-.contenido-texto-card h4 {
+    border-left: 4px solid #f4c542; /* 🔹 detalle profesional */
+  }
+  
+  /* ===== IMAGEN ===== */
+  .card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px; /* usa 50% si la quieres circular */
+    flex-shrink: 0;
+  }
+  
+  /* ===== TEXTO ===== */
+  .contenido-texto-card {
+    text-align: left;
+  }
+  
+  .contenido-texto-card h4 {
     font-size: 1.4rem;
-    color: #333;
+    color: #222;
     margin-bottom: 10px;
-}
-
-.contenido-texto-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Diseño responsivo */
-@media screen and (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
+    line-height: 1.3;
+  }
+  
+  .contenido-texto-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media screen and (max-width: 768px) {
     .card {
-        width: 90%;
+      flex-direction: column;
+      text-align: center;
+      border-left: none;
+      border-bottom: none;
     }
-}
+  
+    .card img {
+      width: 110px;
+      height: 110px;
+    }
+  
+    .contenido-texto-card {
+      text-align: center;
+    }
+  
+    .contenido-texto-card p {
+        text-align: justify;
+        padding: 0 15px;
+      }
+  }

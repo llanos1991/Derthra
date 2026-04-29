@@ -19,13 +19,7 @@
 }
 
 .videos-section h2::after {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 4px;
-  background-color: #f4c542;
-  margin: 10px auto 0;
-  border-radius: 2px;
+  display: none;
 }
 
 /* ======= DESCRIPCIÓN ======= */
@@ -91,17 +85,17 @@
   align-items: flex-start;
 }
 
-.videos-frame iframe {
+.videos-frame video {
   width: 100%;
   max-width: 420px;
   height: 250px;
   border-radius: 12px;
-  border: 3px solid #f4c542;
+  object-fit: cover; /* 🔹 evita deformación */
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.videos-frame iframe:hover {
+.videos-frame video:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
 }
@@ -117,37 +111,35 @@
 @media (max-width: 900px) {
   .videos-container {
     flex-direction: column;
-    align-items: center;   /* centra ambos elementos */
-    gap: 10px;             /* reduce el espacio entre texto y video */
+    align-items: center;
+    gap: 10px;
   }
 
   .videos-text {
     flex: 1 1 100%;
-    text-align: center;    /* centra el texto si quieres */
+    text-align: center;
   }
 
   .videos-text li {
-    text-align: left;      /* mantiene las viñetas alineadas */
+    text-align: left;
   }
 
   .videos-frame {
     flex: 1 1 100%;
-    display: flex;
-    justify-content: center; /* centra horizontalmente el video */
-    margin-top: 0;           /* elimina margen innecesario */
+    justify-content: center;
+    margin-top: 0;
   }
 
-  .videos-frame iframe {
+  .videos-frame video {
     max-width: 340px;
     height: 200px;
   }
 }
 
 @media (max-width: 480px) {
-  .videos-frame iframe {
+  .videos-frame video {
     max-width: 280px;
     height: 160px;
   }
 }
-
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhoneAlt, FaEnvelope, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import "../styles/Footer.css";
 
 function Footer() {
@@ -20,36 +20,6 @@ function Footer() {
           <p>
             <a href="mailto:unitech.negocio@gmail.com">
               derthra.solutions@gmail.com
-            </a>
-          </p>
-        </div>
-
-        <div className="footer-item">
-          <h4>
-            <FaYoutube className="icon" aria-hidden="true" /> YouTube
-          </h4>
-          <p>
-            <a
-              href="https://www.youtube.com/@unitech-25"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @unitech-25
-            </a>
-          </p>
-        </div>
-
-        <div className="footer-item">
-          <h4>
-            <FaInstagram className="icon" aria-hidden="true" /> Instagram
-          </h4>
-          <p>
-            <a
-              href="https://www.instagram.com/unitechsolutions.pe/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              unitechsolutions.pe
             </a>
           </p>
         </div>

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButtom";
 import tesis from '../img/asesoria/ejemplo1.png';
-import infra from '../img/asesoria/asesorinfra.png';
+import infra from '../img/asesoria/imasd.png';
 import '../styles/Asesoria.css';
 
 function Asesoria() {
@@ -11,24 +11,26 @@ function Asesoria() {
       <>
       <Navbar />
       <section className="asesoria-ingenieria">
-        <h2>Asesoría Profesional en Infraestructura de Red y Sistemas</h2>
+        <h2>Asesoría en proyectos de I + D con IA</h2>
 
         <p>
-          Brindamos acompañamiento integral a empresas y profesionales en el desarrollo de proyectos de infraestructura de red y sistemas. 
-          Desde la planificación hasta la implementación, con enfoque técnico y personalizado según las necesidades de tu organización.
+        Brindamos asesoría especializada en proyectos de investigación, desarrollo e innovación (I+D) basados en inteligencia artificial, 
+        acompañando a empresas y profesionales desde la concepción de la idea hasta su implementación. Nuestro enfoque integra análisis técnico,
+        diseño de soluciones inteligentes y desarrollo de modelos de IA aplicados a distintos sectores, garantizando soluciones escalables, 
+        seguras y alineadas a los objetivos estratégicos de cada organización.
         </p>
 
         <h3>¿Qué incluye nuestra asesoría?</h3>
         <div className="container">
         <div className="left-div">
           <ul>
-            <li>Evaluación de necesidades y diagnóstico técnico</li>
-            <li>Diseño de infraestructura de red (LAN, WAN, Wi-Fi, etc.)</li>
-            <li>Configuración y gestión de servidores, routers, switches</li>
-            <li>Implementación de sistemas de gestión (ERP, CRM, bases de datos)</li>
+            <li>Análisis de necesidades y definición del caso de uso con IA</li>
+            <li>Diseño de arquitectura de soluciones basadas en IA (cloud, APIs, microservicios)</li>
+            <li>Desarrollo e integración de modelos de inteligencia artificial (voz, texto, imagen)</li>
+            <li>Preparación, limpieza y gestión de datos para entrenamiento de modelos</li>
             <li>Seguridad informática y protección de datos</li>
-            <li>Optimización del rendimiento y escalabilidad del sistema</li>
-            <li>Documentación técnica y diagramas de red</li>
+            <li>Pruebas, validación de modelos y control de calidad</li>
+            <li>Implementación de pipelines (STT, LLM, TTS, analítica de datos)</li>
             <li>Soporte post-implementación y mantenimiento preventivo</li>
         </ul>
        </div>
@@ -39,7 +41,7 @@ function Asesoria() {
       </section>
           
       <section className="asesoria-tesis">
-        <h2>Asesoría de Tesis en el área de Sistemas y Software</h2>
+        <h2>Asesoría academica en el área de sistemas y software</h2>
 
           <p>
             Brindamos acompañamiento completo en el desarrollo de tesis para estudiantes de Ingeniería de Sistemas e Informática.

@@ -1,13 +1,15 @@
 import React from "react";
 import "../styles/Videos.css";
 
-function Videos({ title, description, listItems, videoUrl }) {
+function Videos({ title, description, listItems, videoSrc }) {
   return (
     <section className="videos-section">
       <h2>{title}</h2>
       <p>{description}</p>
 
       <div className="videos-container">
+        
+        {/* TEXTO */}
         <div className="videos-text">
           <ul>
             {listItems.map((item, index) => (
@@ -16,14 +18,14 @@ function Videos({ title, description, listItems, videoUrl }) {
           </ul>
         </div>
 
+        {/* VIDEO LOCAL */}
         <div className="videos-frame">
-          <iframe
-            src={videoUrl}
-            title={title}
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
+          <video controls className="video-player">
+            <source src={videoSrc} type="video/mp4" />
+            Tu navegador no soporta video.
+          </video>
         </div>
+
       </div>
     </section>
   );

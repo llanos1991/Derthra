@@ -5,6 +5,10 @@ import WhatsAppButton from "../components/WhatsAppButtom";
 import Footer from "../components/Footer";
 import '../styles/Videos.css';
 
+import cppVideo from "../videos/cpp.mp4";
+import pythonVideo from "../videos/python.mp4";
+import adaVideo from "../videos/ada.mp4";
+
 function Unidev() {
   return (
     <>
@@ -26,7 +30,7 @@ function Unidev() {
             'Controladores (drivers)',
             'Robótica e IoT'
           ]}
-          videoUrl="https://www.youtube.com/embed/f43023WVXec"
+          videoSrc={cppVideo}
         />
 
         <Videos
@@ -44,7 +48,7 @@ function Unidev() {
             'Ciberseguridad / Hacking ético',
             'Internet of Things (IoT) (Raspberry Pi + sensores)',
           ]}
-          videoUrl="https://www.youtube.com/embed/iboVGlCjyok"
+          videoSrc={pythonVideo}
         />
 
         <Videos
@@ -60,7 +64,7 @@ function Unidev() {
             'Aplicaciones militares y navales',
             'Software de tiempo real y alta confiabilidad'
           ]}
-          videoUrl="https://www.youtube.com/embed/yA9BsxuX0c4"
+          videoSrc={adaVideo}
         />
       </div>
 

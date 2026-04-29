@@ -21,6 +21,7 @@
   letter-spacing: 0.5px;
 }
 
+/*
 .asesoria-ingenieria h2::after,
 .asesoria-tesis h2::after {
   content: "";
@@ -30,7 +31,7 @@
   background-color: #f4c542;
   margin: 10px auto 0;
   border-radius: 2px;
-}
+}*/
 
 /* ======= PÁRRAFOS ======= */
 .asesoria-ingenieria p,
@@ -79,7 +80,7 @@
   content: "●";
   position: absolute;
   left: 0;
-  color: #f4c542;
+  color: #111;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -100,7 +101,7 @@
 
 .img-estilo {
   width: 100%;
-  max-width: 340px; /* 🔹 tamaño ideal y equilibrado */
+  max-width: 240px; /* 🔹 tamaño ideal y equilibrado */
   height: auto;
   border-radius: 14px;
   object-fit: cover;
