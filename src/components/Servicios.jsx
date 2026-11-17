@@ -1,60 +1,77 @@
 import React from 'react';
-import red from '../img/servicios/personal_red.png';
-import video from '../img/servicios/videovigilancia.png';
-import install from '../img/servicios/equipos_informatico.png';
-import asesorTec from '../img/servicios/asesoria_tec.png';
-import asesor from '../img/servicios/asesor.png';
+import aiImage from '../img/servicios/ia-vision-v2.png';
+import iotImage from '../img/servicios/asesoria_tec.png';
+import researchImage from '../img/servicios/personal_red.png';
+import codeImage from '../img/servicios/equipos_informatico.png';
+import advisingImage from '../img/servicios/asesor.png';
 import '../styles/Servicios.css';
 
-export default function Servicios() {
+const services = [
+  {
+    title: 'Derthra IA',
+    category: 'Inteligencia artificial',
+    description: 'Desarrollamos soluciones de IA para automatizar procesos y analizar imágenes, video y voz en entornos empresariales e industriales.',
+    image: aiImage,
+    imageAlt: 'Cámara de visión artificial conectada a un procesador de inteligencia artificial',
+  },
+  {
+    title: 'Soluciones IA para IoT',
+    category: 'IoT y automatización',
+    description: 'Integramos sensores, dispositivos y modelos de IA para monitorear procesos y convertir datos en alertas y acciones en tiempo real.',
+    image: iotImage,
+    imageAlt: 'Técnico supervisando equipos y controles en un entorno industrial',
+  },
+  {
+    title: 'Proyectos I + D con IA',
+    category: 'Investigación aplicada',
+    description: 'Diseñamos prototipos y MVPs para probar ideas tecnológicas, medir su viabilidad y avanzar hacia soluciones listas para crecer.',
+    image: researchImage,
+    imageAlt: 'Especialista trabajando con infraestructura y equipos tecnológicos',
+  },
+  {
+    title: 'Derthra Code',
+    category: 'Cursos de programación',
+    description: 'Aprende C++, Python y Ada con formación práctica, ejercicios y fundamentos para desarrollar tus propios proyectos.',
+    image: codeImage,
+    imageAlt: 'Estación de trabajo con teclado y computadora para programación',
+  },
+  {
+    title: 'Asesoría académica',
+    category: 'Sistemas y software',
+    description: 'Acompañamos proyectos académicos de ingeniería de sistemas, desde la definición del problema hasta el desarrollo de la solución.',
+    image: advisingImage,
+    imageAlt: 'Asesoría académica entre dos estudiantes frente a una computadora',
+  },
+];
+
+function Servicios() {
   return (
-    <section className="about-services">
-      <div className="contenedor">
-        <h2 className="titulo">Nuestros servicios</h2>
+    <section className="about-services" aria-labelledby="services-title">
+      <div className="services-inner">
+        <div className="services-heading">
+          <h2 id="services-title">Nuestros servicios</h2>
+        </div>
+
         <div className="servicio-cont">
-          
-          <div className="servicio-ind">
-            <img src={red} alt="redes" />
-            <h3>Derthra IA</h3>
-            <p>
-               Desarrollamos soluciones de inteligencia artificial orientadas a automatizar procesos y generar valor en distintos sectores, incluyendo modelos para imágenes, video y voz, así como aplicaciones en áreas industrial, salud y defensa, integradas a sistemas modernos mediante arquitecturas escalables.
-            </p>
-          </div>
-
-          <div className="servicio-ind">
-            <img src={video} alt="video vigilancia" />
-            <h3>Soluciones IA para IoT</h3>
-            <p>
-                Implementamos sistemas que combinan sensores, dispositivos IoT y algoritmos de inteligencia artificial para el monitoreo, automatización y análisis en tiempo real, permitiendo optimizar procesos operativos mediante soluciones integradas entre hardware y cloud.
-            </p>
-          </div>
-
-          <div className="servicio-ind">
-            <img src={install} alt="instalacion de equipos inf" />
-            <h3>Proyectos I + D con IA</h3>
-            <p>
-                Diseñamos y desarrollamos proyectos de investigación aplicada en inteligencia artificial, creando prototipos y MVPs que permiten validar ideas tecnológicas, evaluar su viabilidad y llevarlas a soluciones concretas con enfoque innovador.
-            </p>
-          </div>
-
-          <div className="servicio-ind">
-            <img src={asesorTec} alt="asesoria tecnica" />
-            <h3>Derthra Code</h3>
-            <p>
-                Brindamos formación práctica en programación con lenguajes como C++, Python, Java y ADA, enfocándonos en el desarrollo de lógica, buenas prácticas y preparación para proyectos reales dentro del entorno profesional.
-            </p>
-          </div>
-
-          <div className="servicio-ind">
-            <img src={asesor} alt="asesor de tesis" />
-            <h3>Asesoria academica en sistemas</h3>
-            <p>
-            Ofrecemos asesoría especializada para el desarrollo de tesis y trabajos académicos en ingeniería de sistemas, apoyando en la definición del problema, desarrollo de soluciones tecnológicas y aplicación de estándares de calidad.
-            </p>
-          </div>
-
+          {services.map((service) => (
+            <article className="servicio-ind" key={service.title}>
+              <img
+                className={`service-image ${service.imageClass || ''}`}
+                src={service.image}
+                alt={service.imageAlt}
+                loading="lazy"
+              />
+              <div className="service-content">
+                <p className="service-category">{service.category}</p>
+                <h3>{service.title}</h3>
+                <p className="service-description">{service.description}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
+export default Servicios;

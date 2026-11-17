@@ -1,145 +1,197 @@
-/* ======= SECCIÓN DE CURSOS UNIDEV ======= */
+/* Cursos Derthra Code */
 .videos-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 20px;
-  font-family: "Poppins", sans-serif;
-  color: #222;
-  background-color: #f9f9f9;
-}
-
-/* ======= TÍTULO PRINCIPAL ======= */
-.videos-section h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 20px;
-  text-align: center;
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: clamp(52px, 7vw, 88px) 24px;
+  color: #20242b;
+  background: #f1f2f1;
+  font-family: "Poppins", sans-serif;
 }
 
-.videos-section h2::after {
-  display: none;
+.videos-section:nth-of-type(even) {
+  background: #fff;
 }
 
-/* ======= DESCRIPCIÓN ======= */
-.videos-section p {
-  font-size: 1.05rem;
-  color: #555;
-  line-height: 1.7;
-  text-align: justify;
-  margin-bottom: 25px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ======= CONTENEDOR PRINCIPAL ======= */
 .videos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  align-items: center;
+  gap: clamp(36px, 6vw, 88px);
+  width: min(1180px, 100%);
+  margin: 0 auto;
 }
 
-/* ======= TEXTO ======= */
 .videos-text {
-  flex: 1 1 520px;
+  min-width: 0;
+}
+
+.videos-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #a57900;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  line-height: 1.5;
+}
+
+.videos-text h2 {
+  max-width: 680px;
+  margin: 0 0 18px;
+  color: #20242b;
+  font-size: clamp(2rem, 3.7vw, 3.25rem);
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+  text-align: left;
+}
+
+.videos-description {
+  max-width: 690px;
+  margin: 0 0 28px;
+  color: #505966;
+  font-size: 1.03rem;
+  line-height: 1.8;
+}
+
+.videos-list-title {
+  margin: 0 0 15px;
+  color: #252a31;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .videos-text ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 12px;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  padding-left: 0;
 }
 
 .videos-text li {
   position: relative;
-  font-size: 1rem;
-  color: #222;
-  margin-bottom: 12px;
-  padding-left: 28px;
-  transition: transform 0.2s ease;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px 10px 32px;
+  border: 1px solid #e4e5e3;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #36404c;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 
 .videos-text li::before {
-  content: "●";
   position: absolute;
-  left: 0;
-  color: #f4c542;
-  font-weight: bold;
-  font-size: 1.1rem;
+  left: 13px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e7b91f;
+  content: "";
 }
 
 .videos-text li:hover {
-  transform: translateX(5px);
-  color: #111;
+  transform: translateY(-2px);
+  border-color: #e7c95b;
+  box-shadow: 0 7px 16px rgba(32, 36, 43, 0.07);
 }
 
-/* ======= VIDEO ======= */
 .videos-frame {
-  flex: 1 1 380px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  position: relative;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid rgba(231, 185, 31, 0.5);
+  border-radius: 22px;
+  background: #20242b;
+  box-shadow: 0 22px 48px rgba(22, 27, 34, 0.2);
+}
+
+.videos-frame::before {
+  position: absolute;
+  z-index: 0;
+  top: -12px;
+  right: -12px;
+  width: 74px;
+  height: 74px;
+  border-top: 3px solid #e7b91f;
+  border-right: 3px solid #e7b91f;
+  border-radius: 0 22px 0 0;
+  content: "";
+  pointer-events: none;
 }
 
 .videos-frame video {
+  position: relative;
+  z-index: 1;
+  display: block;
   width: 100%;
-  max-width: 420px;
-  height: 250px;
-  border-radius: 12px;
-  object-fit: cover; /* 🔹 evita deformación */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  aspect-ratio: 16 / 9;
+  border-radius: 13px;
+  background: #111;
+  object-fit: contain;
 }
 
-.videos-frame video:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+.videos-frame-caption {
+  display: block;
+  padding: 12px 5px 2px;
+  color: #f7f7f4;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
-/* ======= SEPARADOR ENTRE CURSOS ======= */
-.videos-section:not(:last-child) {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-}
-
-/* ======= RESPONSIVE ======= */
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   .videos-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+    max-width: 680px;
   }
 
-  .videos-text {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .videos-text li {
-    text-align: left;
+  .videos-text h2 {
+    font-size: clamp(2rem, 7vw, 2.8rem);
   }
 
   .videos-frame {
-    flex: 1 1 100%;
-    justify-content: center;
-    margin-top: 0;
-  }
-
-  .videos-frame video {
-    max-width: 340px;
-    height: 200px;
+    width: 100%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
+  .videos-section {
+    padding: 48px 18px;
+  }
+
+  .videos-text ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .videos-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.13em;
+  }
+
+  .videos-description {
+    font-size: 0.96rem;
+  }
+
+  .videos-frame {
+    padding: 8px;
+    border-radius: 17px;
+  }
+
   .videos-frame video {
-    max-width: 280px;
-    height: 160px;
+    border-radius: 11px;
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .videos-text li {
+    transition: none;
+  }
+}

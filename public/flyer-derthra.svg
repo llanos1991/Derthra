@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">DERTHRA — Soluciones tecnológicas</title>
+  <desc id="desc">Flyer de servicios de inteligencia artificial, IoT, investigación y desarrollo, cursos y asesoría académica.</desc>
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#20242b"/>
+      <stop offset="1" stop-color="#30343b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd52f"/>
+      <stop offset="1" stop-color="#e8ad00"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#252a31" flood-opacity=".10"/>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1080" height="1350" fill="#f1f2f1"/>
+  <rect width="1080" height="600" fill="url(#hero)"/>
+  <rect width="1080" height="600" fill="url(#grid)"/>
+
+  <!-- Marca DERTHRA en geometría vectorial -->
+  <g transform="translate(72 52)">
+    <path d="M22 0h34l17 29-17 29H22L5 29zM22 63h34l17 29-17 29H22L5 92zM82 32h34l17 29-17 29H82L65 61z" fill="url(#gold)"/>
+    <text x="3" y="151" fill="#ffd52f" font-family="Arial,sans-serif" font-size="21" font-weight="800" letter-spacing="1">DERTHRA</text>
+  </g>
+  <text x="1008" y="102" text-anchor="end" fill="#f4c83e" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">TECNOLOGÍA · FORMACIÓN · INNOVACIÓN</text>
+
+  <text x="72" y="265" fill="#f4c83e" font-family="Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="5">SOLUCIONES PARA EMPRESAS Y PERSONAS</text>
+  <text x="72" y="356" fill="#ffffff" font-family="Arial,sans-serif" font-size="69" font-weight="800" letter-spacing="-2">Ideas que se</text>
+  <text x="72" y="438" fill="#ffffff" font-family="Arial,sans-serif" font-size="69" font-weight="800" letter-spacing="-2">convierten en</text>
+  <text x="72" y="520" fill="#f4c83e" font-family="Arial,sans-serif" font-size="69" font-weight="800" letter-spacing="-2">soluciones reales.</text>
+  <text x="75" y="566" fill="#d7dbe0" font-family="Arial,sans-serif" font-size="23">Tecnología aplicada, asesoría especializada y formación práctica.</text>
+  <g opacity=".18" transform="translate(820 292) scale(1.52)">
+    <path d="M22 0h34l17 29-17 29H22L5 29zM22 63h34l17 29-17 29H22L5 92zM82 32h34l17 29-17 29H82L65 61z" fill="#f4c83e"/>
+  </g>
+
+  <text x="72" y="664" fill="#8a6800" font-family="Arial,sans-serif" font-size="17" font-weight="800" letter-spacing="4">LO QUE HACEMOS</text>
+  <text x="72" y="712" fill="#20242b" font-family="Arial,sans-serif" font-size="37" font-weight="750">Servicios para avanzar con confianza</text>
+
+  <!-- Cards de servicios -->
+  <g filter="url(#shadow)">
+    <rect x="72" y="754" width="450" height="170" rx="18" fill="#ffffff"/>
+    <rect x="558" y="754" width="450" height="170" rx="18" fill="#ffffff"/>
+    <rect x="72" y="948" width="450" height="170" rx="18" fill="#ffffff"/>
+    <rect x="558" y="948" width="450" height="170" rx="18" fill="#ffffff"/>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <circle cx="119" cy="807" r="23" fill="#fff2bf"/><text x="119" y="815" text-anchor="middle" fill="#8a6800" font-size="22" font-weight="800">AI</text>
+    <text x="157" y="814" fill="#20242b" font-size="25" font-weight="750">Inteligencia artificial</text>
+    <text x="102" y="860" fill="#56606b" font-size="18">Automatización y análisis inteligente</text><text x="102" y="887" fill="#56606b" font-size="18">de imágenes, voz y datos.</text>
+
+    <circle cx="605" cy="807" r="23" fill="#fff2bf"/><text x="605" y="815" text-anchor="middle" fill="#8a6800" font-size="17" font-weight="800">IoT</text>
+    <text x="643" y="814" fill="#20242b" font-size="25" font-weight="750">IoT y automatización</text>
+    <text x="588" y="860" fill="#56606b" font-size="18">Sensores y sistemas conectados</text><text x="588" y="887" fill="#56606b" font-size="18">para optimizar procesos.</text>
+
+    <circle cx="119" cy="1001" r="23" fill="#fff2bf"/><text x="119" y="1009" text-anchor="middle" fill="#8a6800" font-size="20" font-weight="800">I+D</text>
+    <text x="157" y="1008" fill="#20242b" font-size="25" font-weight="750">Investigación aplicada</text>
+    <text x="102" y="1054" fill="#56606b" font-size="18">Prototipos y proyectos tecnológicos</text><text x="102" y="1081" fill="#56606b" font-size="18">con inteligencia artificial.</text>
+
+    <circle cx="605" cy="1001" r="23" fill="#fff2bf"/><text x="605" y="1009" text-anchor="middle" fill="#8a6800" font-size="19" font-weight="800">&lt;/&gt;</text>
+    <text x="643" y="1008" fill="#20242b" font-size="25" font-weight="750">Derthra Code</text>
+    <text x="588" y="1054" fill="#56606b" font-size="18">Cursos prácticos de C++, Python</text><text x="588" y="1081" fill="#56606b" font-size="18">y Ada para distintos niveles.</text>
+  </g>
+
+  <rect x="72" y="1142" width="936" height="112" rx="18" fill="#fff8e3" stroke="#e8d99e"/>
+  <rect x="72" y="1142" width="7" height="112" rx="3.5" fill="url(#gold)"/>
+  <text x="104" y="1183" fill="#20242b" font-family="Arial,sans-serif" font-size="23" font-weight="750">¿Buscas orientación para tu proyecto o tesis?</text>
+  <text x="104" y="1220" fill="#56606b" font-family="Arial,sans-serif" font-size="18">Asesoría académica en sistemas y desarrollo de software.</text>
+  <text x="72" y="1300" fill="#20242b" font-family="Arial,sans-serif" font-size="19" font-weight="700">Hablemos</text>
+  <g transform="translate(184 1277)" aria-label="WhatsApp">
+    <circle cx="16" cy="16" r="15" fill="#20c967"/>
+    <path d="M8 24l1.4-4.1a10 10 0 1 1 3.4 3.1L8 24z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M12.4 11.2c-.5-.9-1-.8-1.3-.8-.4 0-.8 0-1.1.4-.4.4-1.4 1.3-1.4 3.1s1.4 3.6 1.6 3.9c.2.3 2.7 4.2 6.5 5.7 3.2 1.2 3.8 1 4.5.9.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.9-.6l-2.6-1.3c-.4-.2-.7-.2-1 .3-.3.4-1.1 1.3-1.3 1.6-.2.3-.5.3-.9.1-.4-.2-1.8-.7-3.4-2.2-1.2-1.1-2-2.5-2.2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.7.1-.3 0-.5-.1-.7l-1.2-2.6z" transform="translate(2 -2) scale(.78)" fill="#fff"/>
+  </g>
+  <text x="220" y="1300" fill="#444e59" font-family="Arial,sans-serif" font-size="18">+51 956 397 062</text>
+  <circle cx="414" cy="1293" r="3" fill="#d3a500"/>
+  <g transform="translate(434 1282)" aria-label="Correo electrónico" fill="none" stroke="#9a7600" stroke-width="2.2" stroke-linejoin="round">
+    <rect x="0" y="0" width="25" height="19" rx="3"/>
+    <path d="M2 3l10.5 8L23 3"/>
+  </g>
+  <text x="472" y="1300" fill="#444e59" font-family="Arial,sans-serif" font-size="18">derthra.solutions@gmail.com</text>
+  <text x="1008" y="1300" text-anchor="end" fill="#8a6800" font-family="Arial,sans-serif" font-size="18" font-weight="800">DERTHRA.COM</text>
+</svg>

@@ -1,24 +1,36 @@
 import React from 'react';
 import '../styles/Fundador.css';
-import christopherImg from '../img/integrantes/christopher_1.png'; // Asegúrate que la imagen esté en esa ruta
+import christopherImg from '../img/integrantes/christopher_1.png';
 import WhatsAppButton from './WhatsAppButtom';
 
 function Fundador() {
   return (
-    <section className="clientes contenedor">
-      <h2 className="titulo">Fundador</h2>
-      <div className="cards">
-        {/* Puedes agregar más fundadores aquí si lo necesitas */}
-        <div className="card">
-          <img src={christopherImg} alt="Msc. Christopher Josue Llanos Vasquez" />
-          <div className="contenido-texto-card">
-            <h4>Msc. Ing. Christopher Josue Llanos Vasquez</h4>
-            <p>
-              Implementador de sistemas criticos en el area aeronautica, transporte y militar, en los lenguajes de programación como Java,python,C++,ADA.
-              Arquitecto de Software para sistemas Core banking, Core de Salud.
+    <section className="founder-section" aria-labelledby="founder-title">
+      <div className="founder-inner">
+        <header className="founder-heading">
+          <h2 id="founder-title">Fundador</h2>
+        </header>
+
+        <article className="founder-profile">
+          <img
+            className="founder-photo"
+            src={christopherImg}
+            alt="Christopher Josue Llanos Vasquez, fundador de DERTHRA"
+            loading="lazy"
+          />
+
+          <div className="founder-content">
+            <p className="founder-credential">MSc. Ing.</p>
+            <h3>Christopher Josue Llanos Vasquez</h3>
+            <p className="founder-role">Arquitecto de software y especialista en sistemas críticos</p>
+            <p className="founder-bio">
+              Implementa sistemas críticos para los sectores aeronáutico, de
+              transporte y defensa. Diseña arquitectura de software para soluciones
+              bancarias y de salud.
             </p>
+            <p className="founder-technologies">Java <span>·</span> Python <span>·</span> C++ <span>·</span> Ada</p>
           </div>
-        </div>
+        </article>
       </div>
       <WhatsAppButton />
     </section>

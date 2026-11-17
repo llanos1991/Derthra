@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.unitech.website/sitemap.xml
+Sitemap: https://www.derthra.com/sitemap.xml

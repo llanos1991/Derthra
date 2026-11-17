@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import "../styles/Header.css";
 
 // Imágenes del slider
-import img1 from "../img/header/portada_2.png";
+import img1 from "../img/header/derthra-hero-v2.png";
 //import img2 from "../img/header/slider2.png";
 //import img3 from "../img/header/slider3.png";
 //import img4 from "../img/header/slider4.png";

@@ -1,189 +1,363 @@
-/* ======= ESTILOS GENERALES ======= */
-.asesoria-ingenieria,
-.asesoria-tesis {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 20px;
+.asesoria-page {
+  color: #202124;
+  background: #f1f2f1;
   font-family: "Poppins", sans-serif;
-  color: #222;
-  background-color: #f9f9f9;
 }
 
-/* ======= TÍTULOS PRINCIPALES ======= */
-.asesoria-ingenieria h2,
-.asesoria-tesis h2 {
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 20px;
-  text-align: center;
-  position: relative;
-  letter-spacing: 0.5px;
+.advisory-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  align-items: center;
+  gap: clamp(36px, 7vw, 84px);
+  min-height: 500px;
+  padding: clamp(54px, 7vw, 88px) max(24px, calc((100vw - 1180px) / 2));
+  background: #f1f2f1;
+  color: #202124;
 }
 
-/*
-.asesoria-ingenieria h2::after,
-.asesoria-tesis h2::after {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 4px;
-  background-color: #f4c542;
-  margin: 10px auto 0;
-  border-radius: 2px;
-}*/
+.advisory-hero-copy {
+  max-width: 620px;
+}
 
-/* ======= PÁRRAFOS ======= */
-.asesoria-ingenieria p,
-.asesoria-tesis p {
+.advisory-eyebrow {
+  margin: 0 0 14px;
+  color: #d8af2f;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.advisory-hero h1 {
+  margin: 0;
+  color: #202124;
+  font-size: clamp(2.25rem, 4.2vw, 3.7rem);
+  font-weight: 750;
+  line-height: 1.12;
+}
+
+.advisory-hero-description {
+  max-width: 590px;
+  margin: 22px 0 0;
+  color: #4f555a;
   font-size: 1.05rem;
-  color: #555;
-  line-height: 1.7;
-  text-align: justify;
-  margin-bottom: 25px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.8;
 }
 
-/* ======= CONTENEDOR FLEX ======= */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-/* ======= BLOQUE DE TEXTO ======= */
-.left-div {
-  flex: 1 1 520px;
-  margin-top: 0;
-}
-
-.left-div ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.left-div li {
+.advisory-hero-visual {
   position: relative;
-  font-size: 1rem;
-  color: #222;
-  margin-bottom: 12px;
-  padding-left: 28px;
-  transition: transform 0.2s ease;
+  width: min(100%, 320px);
+  aspect-ratio: 369 / 519;
+  justify-self: end;
+  min-width: 0;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(226, 185, 46, 0.6);
+  border-radius: 20px;
+  background: #303338;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
 }
 
-.left-div li::before {
-  content: "●";
+.advisory-hero-visual::after {
   position: absolute;
-  left: 0;
-  color: #111;
-  font-weight: bold;
-  font-size: 1.1rem;
+  inset: 40% 0 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.76));
+  content: '';
 }
 
-.left-div li:hover {
-  transform: translateX(5px);
-  color: #111;
-}
-
-/* ======= IMÁGENES RESPONSIVAS ======= */
-.asesoria-img-container {
-  flex: 1 1 350px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 10px;
-}
-
-.img-estilo {
+.advisory-hero-visual img {
+  display: block;
   width: 100%;
-  max-width: 240px; /* 🔹 tamaño ideal y equilibrado */
-  height: auto;
-  border-radius: 14px;
-  object-fit: cover;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 0;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #25282b;
 }
 
-.img-estilo:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+.advisory-hero-visual figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 22px;
+  bottom: 20px;
+  left: 22px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 650;
 }
 
-/* ======= SUBTÍTULOS (H3) ======= */
-h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #f4c542;
-  margin-top: 30px;
-  margin-bottom: 15px;
+.advisory-section {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  padding: clamp(64px, 8vw, 96px) 24px;
+}
+
+.advisory-section-heading {
+  max-width: 760px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.advisory-section-heading .advisory-eyebrow {
+  margin-bottom: 10px;
+}
+
+.advisory-section-heading h2 {
+  margin: 0;
+  color: #202124;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.advisory-section-heading > p:last-child {
+  max-width: 680px;
+  margin: 14px auto 0;
+  color: #5c6167;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.advisory-ai-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  align-items: start;
+  gap: 28px;
+}
+
+.advisory-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advisory-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 70px;
+  padding: 16px;
+  border: 1px solid #e2e3e4;
+  border-radius: 12px;
+  background: #fff;
+  color: #373b40;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 12px rgba(24, 28, 32, 0.035);
+}
+
+.advisory-list-number {
+  flex: 0 0 auto;
+  color: #9b7809;
+  font-size: 0.77rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.advisory-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 20px;
+  border: 1px solid #e7d69a;
+  border-radius: 16px;
+  background: #fffaf0;
+}
+
+.advisory-note-mark {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: #282b30;
+  color: #f2ce5d;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.advisory-note h3,
+.advisory-academic-content h3,
+.advisory-similarity h3 {
+  margin: 0;
+  color: #25282c;
+  font-size: 1.15rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.advisory-note p {
+  margin: 8px 0 0;
+  color: #62666b;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.advisory-academic-section {
+  padding: clamp(64px, 8vw, 96px) 24px;
+  background: #fff;
+}
+
+.advisory-academic-inner {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+}
+
+.advisory-academic-heading {
+  max-width: none;
+  margin: 0 0 38px;
   text-align: left;
-  border-left: 4px solid #f4c542;
-  padding-left: 12px;
 }
 
-/* ======= AJUSTE DE SECCIÓN ======= */
-.asesoria-tesis {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.advisory-academic-heading > p:last-child {
+  max-width: 760px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-/* ======= RESPONSIVE ======= */
-@media (max-width: 1024px) {
-  .img-estilo {
-    max-width: 300px; /* 🔹 reduce suavemente */
+.advisory-academic-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 72px);
+}
+
+.advisory-academic-visual {
+  height: 390px;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 18px;
+  background: #e5e7e8;
+  box-shadow: 0 12px 30px rgba(24, 28, 32, 0.13);
+}
+
+.advisory-academic-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.advisory-academic-content h3 {
+  margin-bottom: 20px;
+}
+
+.advisory-academic-content .advisory-list {
+  grid-template-columns: 1fr;
+}
+
+.advisory-academic-content .advisory-list li {
+  min-height: 0;
+  padding: 14px 16px;
+  background: #f8f8f7;
+}
+
+.advisory-similarity {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.35fr);
+  gap: 8px 32px;
+  margin-top: 42px;
+  padding: 26px 30px;
+  border-left: 4px solid #d8af2f;
+  border-radius: 0 14px 14px 0;
+  background: #f5f5f2;
+}
+
+.advisory-similarity-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.advisory-similarity-heading > span {
+  color: #9b7809;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.advisory-similarity > p {
+  margin: 0;
+  color: #5c6167;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.advisory-similarity-contact {
+  grid-column: 2;
+  margin-top: 8px !important;
+  color: #30343a !important;
+  font-weight: 650;
+}
+
+@media (max-width: 920px) {
+  .advisory-hero {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 32px;
+  }
+
+  .advisory-ai-content {
+    grid-template-columns: 1fr;
+  }
+
+  .advisory-note {
+    max-width: none;
+  }
+
+  .advisory-academic-layout {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 32px;
   }
 }
 
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-    align-items: center;    /* 🔹 centra texto e imagen */
-    text-align: center;
-    gap: 10px;              /* 🔹 reduce espacio entre ambos */
+@media (max-width: 680px) {
+  .advisory-hero {
+    grid-template-columns: 1fr;
+    padding: 52px 20px;
   }
 
-  .left-div {
-    flex: 1 1 100%;
-    text-align: center;
+  .advisory-hero-visual {
+    width: min(100%, 280px);
+    justify-self: center;
   }
 
-  .left-div li {
-    text-align: left;       /* 🔹 mantiene la lista alineada */
+  .advisory-section,
+  .advisory-academic-section {
+    padding: 58px 18px;
   }
 
-  .asesoria-ingenieria h2,
-  .asesoria-tesis h2 {
-    font-size: 1.8rem;
+  .advisory-section-heading {
+    margin-bottom: 28px;
   }
 
-  .asesoria-img-container {
-    flex: 1 1 100%;
-    display: flex;
-    justify-content: center; /* 🔹 centra horizontalmente */
-    margin-top: 0;           /* 🔹 elimina espacio extra */
+  .advisory-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-  .img-estilo {
-    max-width: 260px;  /* 🔹 tamaño equilibrado para tablets */
-    height: auto;
+  .advisory-list li {
+    min-height: 0;
+  }
+
+  .advisory-academic-layout {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .advisory-academic-visual {
+    height: 270px;
+  }
+
+  .advisory-similarity {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 30px;
+    padding: 22px;
+  }
+
+  .advisory-similarity-contact {
+    grid-column: 1;
   }
 }
-
-@media (max-width: 480px) {
-  .img-estilo {
-    max-width: 220px; /* 🔹 tamaño para móviles */
-  }
-
-  .container {
-    gap: 8px; /* 🔹 menos separación aún en pantallas pequeñas */
-  }
-}
-
-
-  
