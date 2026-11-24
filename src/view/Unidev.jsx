@@ -16,7 +16,7 @@ function Unidev() {
       <PageSEO
         title="Cursos de programación en C++, Python y Ada | DERTHRA"
         description="Explora los cursos de programación de DERTHRA: C++ desde cero, Python práctico y Ada para sistemas críticos, con contenido audiovisual y aplicaciones reales."
-        path="/unidev"
+        path="/derthra-code"
       />
       <Navbar />
 

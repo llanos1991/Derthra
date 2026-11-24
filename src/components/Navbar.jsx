@@ -27,7 +27,7 @@ function Navbar() {
       <div id="primary-navigation" className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <Link to="/">Inicio</Link>
         <Link to="/asesoria">Asesoría tecnológica</Link>
-        <Link to="/unidev">Cursos de programación</Link>
+        <Link to="/derthra-code">Derthra Code · Cursos</Link>
         <Link to="/nosotros">Quiénes somos</Link>
       </div>
     </nav>

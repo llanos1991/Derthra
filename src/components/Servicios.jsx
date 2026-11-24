@@ -37,7 +37,7 @@ const services = [
   },
   {
     title: 'Derthra Code',
-    href: '/unidev',
+    href: '/derthra-code',
     linkText: 'Ver cursos de programación',
     category: 'Cursos de programación',
     description: 'Aprende C++, Python y Ada con formación práctica, ejercicios y fundamentos para desarrollar tus propios proyectos.',
