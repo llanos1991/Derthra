@@ -37,8 +37,8 @@ function Header() {
           <SwiperSlide>
             <div className="slide-bg" style={{ backgroundImage: `url(${img1})` }}>
               <div className="overlay">
-                <h1>DERTHRA</h1>
-                <h2>"FORJAMOS EL FUTURO CON INTELIGENCIA ARTIFICIAL"</h2>
+                <h1>DERTHRA: tecnología y cursos de programación</h1>
+                <h2>Forjamos el futuro con inteligencia artificial</h2>
               </div>
             </div>
           </SwiperSlide>

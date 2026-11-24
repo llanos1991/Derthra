@@ -5,10 +5,13 @@ import researchImage from '../img/servicios/personal_red.png';
 import codeImage from '../img/servicios/equipos_informatico.png';
 import advisingImage from '../img/servicios/asesor.png';
 import '../styles/Servicios.css';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
     title: 'Derthra IA',
+    href: '/asesoria',
+    linkText: 'Conoce la asesoría tecnológica',
     category: 'Inteligencia artificial',
     description: 'Desarrollamos soluciones de IA para automatizar procesos y analizar imágenes, video y voz en entornos empresariales e industriales.',
     image: aiImage,
@@ -16,6 +19,8 @@ const services = [
   },
   {
     title: 'Soluciones IA para IoT',
+    href: '/asesoria',
+    linkText: 'Ver servicios de inteligencia artificial',
     category: 'IoT y automatización',
     description: 'Integramos sensores, dispositivos y modelos de IA para monitorear procesos y convertir datos en alertas y acciones en tiempo real.',
     image: iotImage,
@@ -23,6 +28,8 @@ const services = [
   },
   {
     title: 'Proyectos I + D con IA',
+    href: '/asesoria',
+    linkText: 'Conoce nuestros proyectos de I+D',
     category: 'Investigación aplicada',
     description: 'Diseñamos prototipos y MVPs para probar ideas tecnológicas, medir su viabilidad y avanzar hacia soluciones listas para crecer.',
     image: researchImage,
@@ -30,6 +37,8 @@ const services = [
   },
   {
     title: 'Derthra Code',
+    href: '/unidev',
+    linkText: 'Ver cursos de programación',
     category: 'Cursos de programación',
     description: 'Aprende C++, Python y Ada con formación práctica, ejercicios y fundamentos para desarrollar tus propios proyectos.',
     image: codeImage,
@@ -37,6 +46,8 @@ const services = [
   },
   {
     title: 'Asesoría académica',
+    href: '/asesoria',
+    linkText: 'Ver asesoría académica',
     category: 'Sistemas y software',
     description: 'Acompañamos proyectos académicos de ingeniería de sistemas, desde la definición del problema hasta el desarrollo de la solución.',
     image: advisingImage,
@@ -65,6 +76,7 @@ function Servicios() {
                 <p className="service-category">{service.category}</p>
                 <h3>{service.title}</h3>
                 <p className="service-description">{service.description}</p>
+                <Link className="service-link" to={service.href}>{service.linkText}</Link>
               </div>
             </article>
           ))}

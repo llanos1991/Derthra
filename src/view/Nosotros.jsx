@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButtom";
 import "../styles/Nosotros.css";
+import PageSEO from "../components/PageSEO";
 
 const objectives = [
   "Implementar proyectos de investigación y desarrollo en instituciones y empresas.",
@@ -25,6 +26,11 @@ const technologies = [
 function Nosotros() {
   return (
     <>
+      <PageSEO
+        title="Quiénes somos | DERTHRA Tecnología Peruana"
+        description="Conoce DERTHRA, iniciativa tecnológica peruana enfocada en inteligencia artificial, desarrollo de software, formación y asesoría especializada."
+        path="/nosotros"
+      />
       <Navbar />
 
       <main className="about-page">
@@ -32,7 +38,7 @@ function Nosotros() {
           <div className="about-intro-inner">
             <div className="about-intro-copy">
               <span className="about-eyebrow">DERTHRA · QUIÉNES SOMOS</span>
-              <h1 id="about-title">Tecnología pensada para generar impacto</h1>
+              <h1 id="about-title">Quiénes somos: tecnología para resolver retos reales</h1>
               <p className="about-lead">
                 Somos una iniciativa peruana que transforma retos reales en soluciones tecnológicas,
                 conectando innovación, formación y asesoría especializada.

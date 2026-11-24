@@ -11,20 +11,24 @@ function Navbar() {
   }, [menuOpen]);
   
   return (
-    <nav className="navbar">
-      <img src={logo} alt="Logo UNItech" className = "logo" />
+    <nav className="navbar" aria-label="Navegación principal">
+      <Link to="/" aria-label="DERTHRA, página de inicio">
+        <img src={logo} alt="DERTHRA" className="logo" />
+      </Link>
       <button
         className="hamburger"
         onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle navigation"
+        aria-label={menuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
+        aria-expanded={menuOpen}
+        aria-controls="primary-navigation"
       >
         ☰
       </button>
-      <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+      <div id="primary-navigation" className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <Link to="/">Inicio</Link>
-        <Link to="/asesoria">Asesoria</Link>
-        <Link to="/unidev">Derthra Code</Link>
-        <Link to="/nosotros">Nosotros</Link>
+        <Link to="/asesoria">Asesoría tecnológica</Link>
+        <Link to="/unidev">Cursos de programación</Link>
+        <Link to="/nosotros">Quiénes somos</Link>
       </div>
     </nav>
   );

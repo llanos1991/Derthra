@@ -5,6 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButtom';
 import tesis from '../img/asesoria/ejemplo1.png';
 import infra from '../img/asesoria/imasd.png';
 import '../styles/Asesoria.css';
+import PageSEO from '../components/PageSEO';
 
 const aiServices = [
   'Análisis de necesidades y definición del caso de uso con IA',
@@ -44,6 +45,11 @@ function ServiceList({ items, label }) {
 function Asesoria() {
   return (
     <>
+      <PageSEO
+        title="Asesoría tecnológica e inteligencia artificial | DERTHRA"
+        description="Asesoría tecnológica, proyectos de inteligencia artificial e investigación aplicada. DERTHRA acompaña a empresas, profesionales y estudiantes en Perú."
+        path="/asesoria"
+      />
       <Navbar />
       <main className="asesoria-page">
         <section className="advisory-hero" aria-labelledby="advisory-ai-title">

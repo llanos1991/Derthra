@@ -4,6 +4,7 @@ import Videos from "../components/Videos";
 import WhatsAppButton from "../components/WhatsAppButtom";
 import Footer from "../components/Footer";
 import '../styles/Videos.css';
+import PageSEO from '../components/PageSEO';
 
 import cppVideo from "../videos/cpp.mp4";
 import pythonVideo from "../videos/python.mp4";
@@ -12,10 +13,16 @@ import adaVideo from "../videos/ada.mp4";
 function Unidev() {
   return (
     <>
+      <PageSEO
+        title="Cursos de programación en C++, Python y Ada | DERTHRA"
+        description="Explora los cursos de programación de DERTHRA: C++ desde cero, Python práctico y Ada para sistemas críticos, con contenido audiovisual y aplicaciones reales."
+        path="/unidev"
+      />
       <Navbar />
 
       {/* ===== SECCIÓN CURSOS ===== */}
-      <div>
+      <main>
+        <h1 className="courses-page-title">Cursos de programación en C++, Python y Ada</h1>
         <Videos
           title="¡Descubre el poder del lenguaje C++ desde cero!"
           description="Aprender C++ te da acceso al corazón del rendimiento y control en la programación. Es el lenguaje detrás de videojuegos, sistemas operativos, software embebido y aplicaciones de alto nivel, ideal para quienes buscan entender cómo funciona realmente una computadora y crear software eficiente y poderoso."
@@ -66,7 +73,7 @@ function Unidev() {
           ]}
           videoSrc={adaVideo}
         />
-      </div>
+      </main>
 
       {/* ===== BOTÓN Y FOOTER ===== */}
       <WhatsAppButton />

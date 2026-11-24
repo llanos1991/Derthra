@@ -103,6 +103,19 @@
   line-height: 1.65;
 }
 
+.service-link {
+  margin-top: auto;
+  color: #735900;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.service-link:hover,
+.service-link:focus-visible {
+  color: #302500;
+}
+
 @media (max-width: 900px) {
   .servicio-cont {
     grid-template-columns: repeat(2, minmax(0, 1fr));
